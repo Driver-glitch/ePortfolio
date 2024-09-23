@@ -1,0 +1,113 @@
+.footer {
+  background-color: #101522;
+  padding: 20px 0; /* Reduced padding to make the footer smaller */
+  width: 100%;
+}
+
+
+.footer-links {
+  display: flex;
+  justify-content: space-between; /* Space About and Social apart */
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative; /* Allows absolute centering of Contact */
+}
+
+.footer-about-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Keep About aligned to the left */
+  width: 200px;
+}
+
+.footer-contact-items {
+  position: absolute;
+  left: 50%; /* Move it to the middle */
+  transform: translateX(-50%); /* Adjust the position back by half its width */
+  top: -2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content within Contact */
+  text-align: center;
+  width: 200px;
+}
+
+.footer-social-items {
+  display: flex;
+  flex-direction: column;
+  top: -2px;
+  width: 200px;
+  right: -90px;
+}
+
+.footer-about-items h2,
+.footer-contact-items h2,
+.footer-social-items h2 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 18px;
+}
+
+.footer-about-items a,
+.footer-contact-items a,
+.footer-social-items a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+}
+
+.footer-about-items a:hover,
+.footer-contact-items a:hover,
+.footer-social-items a:hover {
+  color: #ff9c00;
+  transition: 0.3s ease-out;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.social-icon-link {
+  color: #fff;
+  font-size: 24px;
+  margin-right: 80px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 1rem auto 0;
+  padding-top: 1rem;
+  border-top: 1px solid #fff;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.website-rights {
+  color: #fff;
+  font-size: 12px;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    text-align: center;
+    position: static; /* Remove absolute positioning for mobile */
+  }
+
+  .website-rights {
+    margin-top: 1rem;
+  }
+}

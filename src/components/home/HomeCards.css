@@ -1,0 +1,163 @@
+.wrapper {
+    margin-top: 5%; /* Adjust margin to avoid overlap */
+    margin-bottom: 10%;
+}
+
+.welcome-section {
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-top: 0; /* Reset margin */
+}
+
+h4 {
+    color: rgba(41, 37, 15, 0.712);
+    text-align: center;
+    margin-top: 10%; /* Reduce margin to fit better */
+}
+
+/* Adjusted card styles to make them smaller */
+.card {
+    border: none;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    overflow: hidden;
+    border-radius: 20px;
+    min-height: 450px; /* Decreased height for large screens */
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+    padding: 15px; /* Reduce padding inside the card */
+}
+
+@media (max-width: 768px) {
+    .card {
+        min-height: 300px; /* Smaller cards for tablet screens */
+        padding: 10px;
+    }
+}
+
+@media (max-width: 420px) {
+    .card {
+        min-height: 250px; /* Even smaller cards for mobile screens */
+        padding: 8px;
+    }
+}
+
+.card-has-bg {
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.card-has-bg:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    filter: grayscale(100%);
+}
+
+.card-has-bg:hover {
+    transform: scale(0.9);
+    box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3);
+    background-size: 130%;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.card-img-overlay {
+    transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+    background: linear-gradient(0deg, rgba(4, 69, 114, 0.5) 0%, rgba(4, 69, 114, 1) 100%);
+}
+
+.card-meta {
+    text-decoration: none;
+    color: orange;
+}
+
+.card-body {
+    transition: all 500ms cubic-bezier(0.15, 1, 0.25, 1);
+}
+
+.card-body:hover {
+    margin-top: 10px;
+    transition: all 800ms cubic-bezier(1.1, 1, 0.22, 1);
+    cursor: pointer;
+}
+
+.card-img-overlay {
+    transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+    background: linear-gradient(0deg, rgba(12, 12, 12, 0.379) 0%, rgb(0, 0, 0) 100%);
+}
+/* Career Goal Section Styling */
+.career-goal-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #f0f0f5;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Headings */
+.career-goal-container h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #2C3E50;
+    margin-bottom: 20px;
+}
+
+.career-goal-container h2 {
+    font-size: 1.8em;
+    color: #2980B9;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #3498DB;
+    padding-bottom: 5px;
+}
+
+/* Paragraphs */
+.career-goal-container p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Lists */
+.career-goal-container ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.career-goal-container ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .career-goal-container {
+        padding: 30px;
+    }
+
+    .career-goal-container h1 {
+        font-size: 2em;
+    }
+
+    .career-goal-container h2 {
+        font-size: 1.5em;
+    }
+
+    .career-goal-container p,
+    .career-goal-container ul li {
+        font-size: 1.1em;
+    }
+}

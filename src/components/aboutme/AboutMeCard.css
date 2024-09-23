@@ -1,0 +1,81 @@
+/* Container styling for the entire resume */
+.resume-container {
+  background-color: #f0f0f5; /* Light gray background for readability */
+  max-width: 900px;
+  margin: 20px auto; /* Center the resume and add space around */
+}
+
+/* Title and subtitle */
+.resume-title {
+  font-size: 2.8em;
+  color: #2C3E50;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.resume-subtitle {
+  font-size: 1.5em;
+  color: #3498DB;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Section styling */
+.resume-section {
+  margin-bottom: 40px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #3498DB; /* Blue underline to separate sections */
+}
+
+.resume-section h3 {
+  font-size: 1.8em;
+  color: #2C3E50;
+  margin-bottom: 10px;
+}
+
+/* Experience job styling */
+.resume-job {
+  margin-bottom: 20px;
+}
+
+.resume-job h4 {
+  font-size: 1.5em;
+  color: #2980B9;
+}
+
+.resume-job p {
+  font-style: italic;
+  color: #95A5A6;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 1.1em;
+}
+
+/* Contact links */
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #1a8acb;
+}
+
+/* Skills list */
+.resume-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.resume-section ul li {
+  margin-bottom: 8px;
+  font-size: 1.1em;
+  padding-left: 20px;
+  text-indent: -20px;
+  list-style-type: circle;
+}
+
